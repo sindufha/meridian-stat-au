@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meridian — Australia National Statistics Ledger</title>
+  <meta name="description" content="Independent offline-ready national statistics portal for Australia covering macroeconomics, CPI inflation, labour, demographics, states and territories, housing, and clean energy.">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="meta-ribbon" role="note">
+    <div class="container ribbon-inner">
+      <span class="ribbon-tag">OFFICIAL COMPENDIUM · AUSTRALIA 2025–26</span>
+      <span class="ribbon-sources">Sources: ABS · RBA · DCCEEW · AIHW · 100% offline statistical edition</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#/" aria-label="Meridian Australia National Statistics Home">
+        <svg class="brand-mark" width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="25" height="25" rx="5" fill="#0e5a5c"/>
+          <path d="M6 20V14.5M10.5 20V11M15 20V8M19.5 20V12.5" stroke="#f6f4ef" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="22.5" cy="7.5" r="2.2" fill="#e07a52"/>
+        </svg>
+        <span class="brand-text">
+          <strong class="brand-name">MERIDIAN</strong>
+          <span class="brand-sub">Australia National Statistics</span>
+        </span>
+      </a>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <a href="#/" data-route="overview">Overview</a>
+        <a href="#/indicators" data-route="indicators">Indicators</a>
+        <a href="#/regions" data-route="regions">States &amp; Regions</a>
+        <a href="#/demographics" data-route="demographics">Demographics</a>
+        <a href="#/tools" data-route="tools">Tools</a>
+        <a href="#/releases" data-route="releases">Releases</a>
+      </nav>
+
+      <div class="header-search" id="search-box">
+        <label class="sr-only" for="global-search">Search indicators, states, or statistical terms</label>
+        <svg class="search-icon" width="15" height="15" viewBox="0 0 16 16" aria-hidden="true">
+          <circle cx="7" cy="7" r="5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M11 11L14.5 14.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <input id="global-search" type="search" placeholder="Search CPI, GDP, NSW, wages…" autocomplete="off" aria-autocomplete="list" aria-controls="search-results">
+        <div class="search-results" id="search-results" role="listbox" hidden></div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="container main-shell" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong>Meridian National Statistics Ledger</strong> · Independent Australian Statistical Reference
+        <div class="footer-note">Compiled from official public releases by the Australian Bureau of Statistics (ABS), Reserve Bank of Australia (RBA), DCCEEW/AEMO, and AIHW. Every series lists its reference period and agency catalog identifier.</div>
+      </div>
+      <div class="footer-links">
+        <a href="#/indicators">12 Core Series</a>
+        <a href="#/regions">8 Jurisdictions</a>
+        <a href="#/tools">Calculators</a>
+        <a href="#/releases">Methodology &amp; Releases</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
